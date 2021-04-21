@@ -55,7 +55,7 @@ function Myorders() {
                         return (
 
                             <div className="order-container">
-                                <img src={order.image} />
+                                <img src={order.product.image} />
                                 <div>
                                     <p>{order.product.name}</p>
                                     <p>{order.createdAt}</p>
