@@ -5,10 +5,8 @@ import Welcome from "./Welcome"
 import Product from "./Product"
 import Footer from "./Footer"
 import {useEffect } from "react"
-import {useHistory} from "react-router-dom"
 
 export default function Home() {
-  const history = useHistory();
   useEffect(() => {
     localStorage.setItem("isLoggedIn",false);
 }, [])

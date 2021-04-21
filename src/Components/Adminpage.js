@@ -18,7 +18,7 @@ function Adminpage() {
         else if (!localStorage.getItem("isLoggedIn")) {
             history.push("/");
         }
-    }, [])
+    }, [])// eslint-disable-line react-hooks/exhaustive-deps
 
     const fetchOrders = async () => {
         try {

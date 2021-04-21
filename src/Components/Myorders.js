@@ -17,7 +17,7 @@ function Myorders() {
         else if (localStorage.getItem("userType")==="admin"){
            history.push("/admin");
         }
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const getmyOrders = async () => {
         const token = localStorage.getItem("token");

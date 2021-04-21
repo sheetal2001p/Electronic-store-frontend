@@ -1,9 +1,7 @@
 import React from 'react'
-import tv from "../images/TV.jpg"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import { toast } from "react-toastify"
 
 function Product() {
     const [products, setProducts] = useState([]);

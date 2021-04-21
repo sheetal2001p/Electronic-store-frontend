@@ -50,7 +50,7 @@ function Adminproducts() {
         else if (localStorage.getItem("userType")==="user"){
            history.push("/userpage");
         }
-    }, []);
+    }, []);// eslint-disable-line react-hooks/exhaustive-deps
     const fetchProducts = async () => {
         try {
             const res = await axios.get("http://localhost:4000/getProducts");

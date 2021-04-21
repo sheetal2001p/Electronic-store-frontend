@@ -19,7 +19,7 @@ export default function Mywishlist() {
         else if (localStorage.getItem("userType")==="admin"){
            history.push("/admin");
         }
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const getWishlist = async () => {
 

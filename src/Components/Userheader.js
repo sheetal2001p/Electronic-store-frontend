@@ -1,5 +1,4 @@
 import React from 'react'
-import slogo from "../images/S-logo.png"
 import { Link } from "react-router-dom";
 // import { Link } from "react-scroll"
 import Header from "./Header"

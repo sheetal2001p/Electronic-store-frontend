@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, Redirect, useHistory } from "react-router-dom";
-import { useState, useEffect } from "react"
+import { Link, useHistory } from "react-router-dom";
+import { useState } from "react"
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';

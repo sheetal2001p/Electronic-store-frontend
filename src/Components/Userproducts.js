@@ -1,5 +1,4 @@
 import React from 'react'
-import tv from "../images/TV.jpg"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import { toast } from "react-toastify"
@@ -13,7 +12,10 @@ export default function Userproducts() {
 
 
     useEffect(() => {
-        fetchProducts();
+        fetchProducts();   
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+
+
     }, []);
     const fetchProducts = async (req, res) => {
         try {

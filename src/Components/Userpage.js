@@ -15,7 +15,7 @@ export default function Userpage() {
         else if (localStorage.getItem("userType")==="admin"){
            history.push("/admin");
         }
-    }, [])
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
     return (
         <div className="userpage">
             <Userheader/>
