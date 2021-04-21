@@ -4,6 +4,7 @@ import { Link ,useHistory} from "react-router-dom"
 import { useState } from "react"
 import { toast } from "react-toastify"
 import { Spinner } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Signup() {
@@ -28,7 +29,7 @@ function Signup() {
 
         try {
             setLoader(true);
-            const res = await axios.post("http://localhost:4000/user/signup", formData);
+            const res = await axios.post("https://sheetal-electronic-store.herokuapp.com/user/signup", formData);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("userType",res.data.user.userType);
 
@@ -40,15 +41,7 @@ function Signup() {
                 setLoader(false)
                 localStorage.setItem("isLoggedIn", true);
 
-                toast.success('Signup Successfully!', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
+                toast.success('Signup Successfully!');
             }
             if (!localStorage.getItem("isLoggedIn")) {
                 history.push("/login")
@@ -62,15 +55,7 @@ function Signup() {
         }
         catch (error) {
             setLoader(false)
-            toast.error('🦄 Signup failed!', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.error('🦄 Signup failed!');
         }
     }
     return (

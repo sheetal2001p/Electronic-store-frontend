@@ -22,7 +22,7 @@ function Adminpage() {
 
     const fetchOrders = async () => {
         try {
-            const res = await axios.get("http://localhost:4000/getallOrders");
+            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/getallOrders");
             setOrders(res.data);
         }
         catch (e) {
@@ -32,7 +32,7 @@ function Adminpage() {
 
     const deleteItem = async (_id) => {
         try {
-            const res = await axios.delete(`http://localhost:4000/deleteOrder/${_id}`);
+            const res = await axios.delete(`https://sheetal-electronic-store.herokuapp.com/deleteOrder/${_id}`);
             fetchOrders();
         }
         catch (e) {

@@ -19,7 +19,7 @@ export default function Userproducts() {
     }, []);
     const fetchProducts = async (req, res) => {
         try {
-            const res = await axios.get("http://localhost:4000/getProducts");
+            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/getProducts");
             setProducts(res.data);
         }
         catch (e) {
@@ -34,7 +34,7 @@ export default function Userproducts() {
             const productId = _id;
             const token = localStorage.getItem("token");
             setLoader(true);
-            const res = await axios.post(`http://localhost:4000/placeorder?product=${productId}`, {}, { headers: { "Authorization": `Bearer ${token}` } });
+            const res = await axios.post(`https://sheetal-electronic-store.herokuapp.com/placeorder?product=${productId}`, {}, { headers: { "Authorization": `Bearer ${token}` } });
             // console.log(res);
             if (res.error) {
                 setLoader(false)
@@ -55,10 +55,10 @@ export default function Userproducts() {
         try {
             const productId = _id;
             const token = localStorage.getItem("token");
-            const res = await axios.post(`http://localhost:4000/addtowishlist?product=${productId}`, {}, { headers: { "Authorization": `Bearer ${token}` } });
+            const res = await axios.post(`https://sheetal-electronic-store.herokuapp.com/addtowishlist?product=${productId}`, {}, { headers: { "Authorization": `Bearer ${token}` } });
             if (res.error) {
                 // setLoader(false)
-                toast.error('🦄 Error! try again');
+                toast.error(' Error! try again');
             }
             else {
                 // setLoader(false)

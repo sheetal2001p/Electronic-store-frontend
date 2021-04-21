@@ -23,7 +23,7 @@ function Login() {
     const getPage = async (req, res) => {
         try {
             setLoader(true)
-            const res = await axios.post("http://localhost:4000/user/login", formData);
+            const res = await axios.post("https://sheetal-electronic-store.herokuapp.com/user/login", formData);
             // console.log(res)
             // console.log(res.data.user.userType)
             localStorage.setItem("userType",res.data.user.userType);

@@ -53,7 +53,7 @@ function Adminproducts() {
     }, []);// eslint-disable-line react-hooks/exhaustive-deps
     const fetchProducts = async () => {
         try {
-            const res = await axios.get("http://localhost:4000/getProducts");
+            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/getProducts");
             setProducts(res.data);
         }
         catch (e) {
@@ -64,7 +64,7 @@ function Adminproducts() {
 
     const addproduct = async () => {
         try {
-            const res = await axios.post("http://localhost:4000/addProduct", formData);
+            const res = await axios.post("https://sheetal-electronic-store.herokuapp.com/addProduct", formData);
             console.log(res);
             fetchProducts();
             setFormData({
@@ -88,7 +88,7 @@ function Adminproducts() {
         console.log(_id)
 
         try {
-            const res = await axios.delete(`http://localhost:4000/deleteProduct/${_id}`);
+            const res = await axios.delete(`https://sheetal-electronic-store.herokuapp.com/deleteProduct/${_id}`);
             fetchProducts();
         }
         catch (e) {
@@ -112,7 +112,7 @@ function Adminproducts() {
     }
     const updateProduct =  async() => {
         try {
-            const res = await axios.put(`http://localhost:4000/updateProduct/${userId}`, formData);
+            const res = await axios.put(`https://sheetal-electronic-store.herokuapp.com/updateProduct/${userId}`, formData);
             fetchProducts();
             setFormData({
                 ...formData,

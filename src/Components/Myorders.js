@@ -23,7 +23,7 @@ function Myorders() {
         const token = localStorage.getItem("token");
 
         try {
-            const res = await axios.get("http://localhost:4000/myOrders", { headers: { "Authorization": `Bearer ${token}` } });
+            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/myOrders", { headers: { "Authorization": `Bearer ${token}` } });
             setMyorders(res.data);
         }
         catch (e) {
@@ -32,7 +32,7 @@ function Myorders() {
     }
     const deleteItem = async (_id) => {
         try {
-            const res = await axios.delete(`http://localhost:4000/deleteOrder/${_id}`);
+            const res = await axios.delete(`https://sheetal-electronic-store.herokuapp.com/deleteOrder/${_id}`);
             getmyOrders();        }
         catch (e) {
             console.log("Error:", e);
@@ -55,7 +55,7 @@ function Myorders() {
                         return (
 
                             <div className="order-container">
-                                <img src={tv} />
+                                <img src={order.image} />
                                 <div>
                                     <p>{order.product.name}</p>
                                     <p>{order.createdAt}</p>

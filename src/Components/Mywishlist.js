@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import { toast } from "react-toastify"
 import {useHistory} from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Mywishlist() {
     const [mywishlist, setMywishlist] = useState([]);
@@ -26,7 +27,7 @@ export default function Mywishlist() {
         const token = localStorage.getItem("token");
 
         try {
-            const res = await axios.get("http://localhost:4000/mywishlist", { headers: { "Authorization": `Bearer ${token}` } });
+            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/mywishlist", { headers: { "Authorization": `Bearer ${token}` } });
             setMywishlist(res.data);
         }
         catch (e) {
@@ -38,7 +39,7 @@ export default function Mywishlist() {
         console.log(_id);
 
         try {
-            const res = await axios.delete(`http://localhost:4000/deletefromWishlist/${_id}`);
+            const res = await axios.delete(`https://sheetal-electronic-store.herokuapp.com/deletefromWishlist/${_id}`);
             getWishlist();
         }
         catch (e) {
@@ -52,32 +53,16 @@ const placeOrder = async(item)=>{
     try {
         const productId = item.product._id;
         const token = localStorage.getItem("token");
-        const res = await axios.post(`http://localhost:4000/placeorder?product=${productId}`,{},{headers:{"Authorization":`Bearer ${token}`}});
+        const res = await axios.post(`https://sheetal-electronic-store.herokuapp.com/placeorder?product=${productId}`,{},{headers:{"Authorization":`Bearer ${token}`}});
         // console.log(res);
         deletefromWishlist(item._id)
         if (res.error) {
             // setLoader(false)
-            toast.error('🦄 Error! try again', {
-                position: "top-left",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.error(' Error! try again');
         }
         else {
             // setLoader(false)
-            toast.success('Ordered Successfully! See Myorders', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.success('Ordered Successfully! See Myorders');
         }
     }
     catch (e) {
