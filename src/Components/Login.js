@@ -34,7 +34,7 @@ function Login() {
             }
             else {
                 setLoader(false)
-                toast.success('🦄 Login Successfully!');
+                toast.success('Login Successfully!');
                 localStorage.setItem("isLoggedIn", true);
             }
 
@@ -53,15 +53,7 @@ function Login() {
             setLoader(false)
             localStorage.setItem("isLoggedIn", false);
 
-            toast.error('🦄 Login failed!', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.error(' Login failed!');
         }
     }
 
