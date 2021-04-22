@@ -53,8 +53,8 @@ function Adminpage() {
                     </div>
                     <h1>Admin Page</h1>
                     <div class="right">
-                        <Link to="/addproducts" id="admin-products" style={{ textDecoration: 'none' }}>See Products</Link>
-                        <Link id="logout" className="btn" onClick={logout}>Logout</Link>
+                        <Link to="/addproducts" id="admin-products"  className="log-sign-btn" style={{ textDecoration: 'none' }}>See Products</Link>
+                        <Link id="logout" className="log-sign-btn" onClick={logout} style={{ textDecoration: 'none' }}>Logout</Link>
                     </div>
 
                 </div>

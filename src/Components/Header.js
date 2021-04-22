@@ -21,13 +21,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           <div className="left">
             <img src={slogo} alt="logo" />
           </div>
+          <div className="middle">
           <h1>Sheetal's Electronics Store</h1>
+
+          </div>
           { 
           
-            (JSON.parse(localStorage.getItem("isLoggedIn")) ? (<div className="right"><Link id="logout" className="btn" onClick={logout}>Logout</Link></div>)
+            (JSON.parse(localStorage.getItem("isLoggedIn")) ? (<div className="right"><Link id="logout" className="login-signup-btn" onClick={logout} style={{ textDecoration: 'none' }}>Logout</Link></div>)
               : (<div className="right">
-                <Link to="/login" id="login" className="btn">Login</Link>
-                <Link to="/signup" id="signup" className="btn">Signup</Link>
+                <Link to="/login" id="login" className="log-sign-btn" style={{ textDecoration: 'none' }}>Login</Link>
+                <Link to="/signup" id="signup" className="log-sign-btn" style={{ textDecoration: 'none' }}>Signup</Link>
               </div>))
           }
         </div>
