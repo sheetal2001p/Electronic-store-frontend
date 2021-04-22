@@ -21,11 +21,11 @@
   .top{
       display: flex;
       width: 100%;
-      height: 100px;
+      height: 40%;
       background-color:rgb(12, 12, 12);
       align-items:center;
       justify-content: space-between;
-      padding: 0px 30px;
+      padding: 20px 30px;
       color:rgb(240, 239, 222);
 
   }
@@ -50,7 +50,7 @@
   }
  
   .right .btn ,.log-sign-btn{
-   width: 30%;
+   width: 40%;
    padding: 3%;
    border: 2px outset rgb(77, 66, 66);
    border-radius: 10px;
@@ -203,7 +203,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding :20px 40px;
+        padding :20px 10px;
         color: rgb(252, 252, 253);
         cursor: pointer;
     }
@@ -249,7 +249,7 @@
      .login-signup-page{
         display: flex;
         align-items: center;
-         width: 40%;
+         width: 100%;
          padding: 30px;
          text-align: center;
          margin: 0px auto;
@@ -277,7 +277,7 @@
 
      }
      #login-signup-btn{
-         width: 92%;
+         width: 90%;
          margin: 20px auto;
          padding: 4px;
          display: flex;
@@ -327,9 +327,10 @@
      }
      .wishlist-heading h1{
          color: brown;
+         font-size: 3vw;
      }
      .items-container{
-         width: 90%;
+         width: 99%;
          background-color: rgb(178, 178, 179);
          margin: 20px auto;
          padding: 8px;
@@ -506,7 +507,7 @@ tr:hover {
     text-align: center;
 }
 .myorders-header h1{
-    font-size: 2.4rem;
+    font-size: 3vw;
     padding: 20px;
 
 }
@@ -520,6 +521,7 @@ tr:hover {
     width: 90%;
     background-color: #161616;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 40px auto;
@@ -566,7 +568,7 @@ tr:hover {
     margin-bottom: 12px;
 }
 .responsive .navbar-icon{
-    margin-left: 10px;
+    margin-left: 2px;
 }
 .responsive #order-btn{
     display: block;
@@ -577,7 +579,7 @@ tr:hover {
 /* For responsive login form */
 @media screen and (max-width: 800px) {
    .login-signup-page{
-       width: 80%;
+       width: 100%;
    } 
    .login-signup-page h1{
     font-size: 4vw;
@@ -594,6 +596,18 @@ tr:hover {
 .right .btn{
     display: none;
 }
+.right-footer input{
+    padding: 2px;
+   }
+   .subscribe{
+       padding: 2px;
+   }
+   .login-signup-page form{
+       width: 720px;
+   }
+   .top{
+       height: 20%;
+   }
 
 }
 @media (max-width: 1985px) and (min-width: 801px) {

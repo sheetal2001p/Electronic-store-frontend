@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from "react-router-dom";
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,6 +13,14 @@ function Login() {
         email: "",
         password: ""
     });
+    useEffect(() => {
+        if(!JSON.parse(localStorage.getItem("isLoggedIn"))){
+            history.push("/login");
+       }
+        else {
+           history.push("/userpage");
+        }
+    }, []);
 
     const changeFormData = (e) => {
         const name = e.target.name;
