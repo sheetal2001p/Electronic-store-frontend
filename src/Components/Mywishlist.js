@@ -79,7 +79,7 @@ const placeOrder = async(item)=>{
                 <img src={cart} alt="img"></img>
             </div>
             {
-
+                
                 mywishlist.map((item) => {
                     return (
                         <div className="items-container">

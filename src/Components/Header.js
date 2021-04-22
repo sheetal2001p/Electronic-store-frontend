@@ -27,7 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           </div>
           { 
           
-            (JSON.parse(localStorage.getItem("isLoggedIn")) ? (<div className="right"><Link id="logout" className="login-signup-btn" onClick={logout} style={{ textDecoration: 'none' }}>Logout</Link></div>)
+            (JSON.parse(localStorage.getItem("isLoggedIn")) ? (<div className="right"><Link id="logout" className="log-sign-btn" onClick={logout} style={{ textDecoration: 'none' }}>Logout</Link></div>)
               : (<div className="right">
                 <Link to="/login" id="login" className="log-sign-btn" style={{ textDecoration: 'none' }}>Login</Link>
                 <Link to="/signup" id="signup" className="log-sign-btn" style={{ textDecoration: 'none' }}>Signup</Link>

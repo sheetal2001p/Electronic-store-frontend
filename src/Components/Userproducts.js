@@ -12,7 +12,7 @@ export default function Userproducts() {
 
 
     useEffect(() => {
-        fetchProducts();   
+        fetchProducts();
         // eslint-disable-next-line react-hooks/exhaustive-deps
 
 
@@ -104,7 +104,7 @@ export default function Userproducts() {
                                         </div>
                                     </div>
 
-)
+                                )
                             }
 
                         })
@@ -121,7 +121,7 @@ export default function Userproducts() {
                                     <div className="card">
                                         <div>
                                             <div className="product-image">
-                                            <img src={product.image} alt="product" />
+                                                <img src={product.image} alt="product" />
                                             </div>
                                             <div id="product-description">
                                                 <h6>Rs.{product.price}</h6>
@@ -150,7 +150,7 @@ export default function Userproducts() {
                                     <div className="card">
                                         <div>
                                             <div className="product-image">
-                                            <img src={product.image} alt="product" />
+                                                <img src={product.image} alt="product" />
                                             </div>
                                             <div id="product-description">
                                                 <h6>Rs.{product.price}</h6>
@@ -179,7 +179,7 @@ export default function Userproducts() {
                                     <div className="card">
                                         <div>
                                             <div className="product-image">
-                                            <img src={product.image} alt="product" />
+                                                <img src={product.image} alt="product" />
                                             </div>
                                             <div id="product-description">
                                                 <h6>Rs.{product.price}</h6>
