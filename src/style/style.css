@@ -619,7 +619,8 @@ tr:hover {
        padding: 5px;
    }
    .foot{
-       padding: 0px;
+      padding: 2px;    
+      font-size: 10px;
    }
    .left img{
     width: 30px;
@@ -632,7 +633,14 @@ tr:hover {
       margin-top:3px ;
       font-size: 15px;
 }
-
+.right-footer input{
+    padding: 2px;
+   }
+   .subscribe{
+       padding: 2px;
+       margin-top: 2px;
+       margin-right: 2px;
+   }
 }
 @media (max-width: 1985px) and (min-width: 801px) {
    .login-signup-page{
