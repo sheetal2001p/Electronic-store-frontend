@@ -64,6 +64,9 @@ function Login() {
             toast.error(' Login failed!');
         }
     }
+    const keyPressed = ()=>{
+         console.log("pressed")
+    }
 
     return (
         <div className="login-body">
@@ -74,7 +77,7 @@ function Login() {
 
                     <input type="email" name="email" placeholder="Email" onChange={changeFormData} />
                     <input type="password" name="password" placeholder="password" onChange={changeFormData} />
-                    <Link id="login-signup-btn" onClick={getPage} to="/login" style={{ textDecoration: 'none' }}>Login
+                    <Link id="login-signup-btn" onClick={getPage} to="/login" onKeyPress={keyPressed} style={{ textDecoration: 'none' }}>Login
                     {(loader ? (<Spinner
                             as="span"
                             animation="border"

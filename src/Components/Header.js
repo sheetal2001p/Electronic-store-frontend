@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   const logout = () => {
     localStorage.setItem("isLoggedIn", false);
     history.push("/");
-    if (localStorage.getItem("isLoggedIn")) {
+    if (JSON.parse(localStorage.getItem("isLoggedIn"))) {
       history.push("/userpage");
   }
     toast.success('Logout Successfully!');

@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <div className="right-footer">
                     <h2>CONTACT</h2>
-                    <h2>Contact Admin</h2>
+                    <h5>Contact Admin</h5>
                     <input type="email" placeholder="Email"/>
                     <button className="subscribe">Subscribe</button>
                 </div>
