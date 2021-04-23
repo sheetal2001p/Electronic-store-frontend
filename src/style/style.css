@@ -579,8 +579,8 @@ tr:hover {
 /* For responsive login form */
 @media screen and (max-width: 800px) {
     .log-sign-btn{
-        width: 50px;
-        height: 30px;
+        width: 30px;
+        height: 15px;
     }
    .login-signup-page{
        width: 100%;
