@@ -615,7 +615,7 @@ tr:hover {
        width: 720px;
    }
    .top{
-       height: 15%;
+       height: 70px;
        padding: 5px;
    }
    .foot{
@@ -628,7 +628,7 @@ tr:hover {
   }
   header h1{
       width: 160px;
-      -color: yellow;
+      margin-right: 5px;
 }
 
 }
