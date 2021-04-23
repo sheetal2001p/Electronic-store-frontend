@@ -579,14 +579,14 @@ tr:hover {
 /* For responsive login form */
 @media screen and (max-width: 800px) {
     .log-sign-btn{
-        width: 60%;
-        height: 4%;
+        width: 50px;
+        height: 30px;
     }
    .login-signup-page{
        width: 100%;
    } 
    .login-signup-page h1{
-    font-size: 4vw;
+    font-size: 6vw;
 }
 .navbar-icon{
     display: block;
@@ -610,14 +610,14 @@ tr:hover {
        width: 720px;
    }
    .top{
-       height: 2%;
+       height: 10%;
    }
    .foot{
        padding: 0px;
    }
    .left img{
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
     border-radius: 60px;
   }
   header h1{
