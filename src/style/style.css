@@ -610,14 +610,14 @@ tr:hover {
        width: 720px;
    }
    .top{
-       height: 10%;
+       height: 2%;
    }
    .foot{
        padding: 0px;
    }
    .left img{
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
     border-radius: 60px;
   }
   header h1{
