@@ -655,6 +655,10 @@ tr:hover {
    .products h2{
        font-size: 5vw;
    }
+ #wishlist-btn,#order-btn{
+     padding: 15px;
+ }
+
 }
 @media (max-width: 1985px) and (min-width: 801px) {
    .login-signup-page{
