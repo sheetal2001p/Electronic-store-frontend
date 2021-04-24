@@ -279,7 +279,7 @@
 
      }
      #login-signup-btn{
-         width: 90%;
+         width: 93%;
          margin: 20px auto;
          padding: 4px;
          display: flex;
@@ -585,7 +585,7 @@ tr:hover {
         height: 25px;
         font-size: 10px;
     }
-    #log-sign-btn{
+    #login-signup-btn{
         padding: 15px 8px;
         width: 70%;
         font-size:8px ;
