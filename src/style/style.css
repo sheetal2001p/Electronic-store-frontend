@@ -657,8 +657,9 @@ tr:hover {
    }
  #wishlist-btn,#order-btn{
      padding: 10px;
-     width: 60%;
+     width: 100%;
      font-size: 15px;
+     margin-left: 20px;
  }
 
 }
