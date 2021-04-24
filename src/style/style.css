@@ -587,6 +587,7 @@ tr:hover {
     }
     #login-signup-btn{
         padding: 10px 8px;
+        width: 80%;
         font-size:18px ;
     }
     #login{
