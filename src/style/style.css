@@ -337,7 +337,7 @@
          margin: 20px auto;
          padding: 8px;
          display: flex;
-         justify-content: space-between;
+         justify-content: space-around;
          align-items: center; 
      }
      
@@ -673,10 +673,10 @@ tr:hover {
     margin-right: 20px;
 }
 .order-container img, .order-container div{
- margin-bottom: 36px;
+ margin-bottom: 26px;
 }
 .order-container{
-    width: 98%;
+    width: 90%;
     margin:10px auto;
 }
 
