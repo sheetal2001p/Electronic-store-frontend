@@ -42,11 +42,11 @@ function Myorders() {
 
     return (
         <div>
-            <header>
+            <div>
                 <div className="myorders-header">
                     <h1>My Orders</h1>
                 </div>
-            </header>
+            </div>
             <div className="myorders">
 
                 {
