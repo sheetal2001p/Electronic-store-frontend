@@ -684,10 +684,11 @@ tr:hover {
 .order{
     margin-right:5px;
     margin-bottom: 30px;
+    margin-left: 15px;
 
 }
 #remove{
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 }
