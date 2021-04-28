@@ -669,10 +669,10 @@ tr:hover {
  .items-container{
      justify-content: flex-start;
      flex-wrap: nowrap;
-     height: 80px;
+     height: 150px;
 }
 .item-name{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .order-container img, .order-container div{
  margin-bottom: 26px;
@@ -682,7 +682,12 @@ tr:hover {
     margin:10px auto;
 }
 .order{
-    margin-right:6px;
+    margin-right:5px;
+    margin-bottom: 30px;
+
+}
+#remove{
+    margin-left: 5px;
 }
 
 }
