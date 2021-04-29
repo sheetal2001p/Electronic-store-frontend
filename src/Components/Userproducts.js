@@ -92,13 +92,7 @@ export default function Userproducts() {
                                             </div>
                                             <div>
                                                 <button className="card-btns" onClick={() => placeOrder(product._id)}>Order Now
-                                                {(loader ? (<Spinner
-                                                        as="span"
-                                                        animation="border"
-                                                        size="sm"
-                                                        role="status"
-                                                        aria-hidden="true"
-                                                    />) : null)}</button>
+                                                </button>
                                                 <button className="addtowishlist card-btns" onClick={() => addtoWishlist(product._id)}>Add to wishlist</button>
                                             </div>
                                         </div>
