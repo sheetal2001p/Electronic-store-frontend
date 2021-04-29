@@ -1,8 +1,7 @@
 import React from 'react'
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll"
 import Header from "./Header"
-
+import UserheaderButtons from "./UserheaderButtons"
 export default function Userheader() {
     const changeNavigation =()=>{
         var x = document.getElementById("sub-menu");
@@ -24,8 +23,7 @@ export default function Userheader() {
                 <Link to="HA" className="nav-links" >Home Appliances</Link>
                 <Link to="MT" className="nav-links" >Mobiles and Tablets</Link>
                 <div className="right">
-                    <Link to="/mywishlist" id="wishlist-btn" className="btn">My Wishlist</Link>
-                    <Link to="/myorders" id="order-btn" className="btn">My Orders</Link>
+                    <UserheaderButtons/>
                 </div>
             </nav>
         </div>

@@ -302,9 +302,19 @@
      
      #wishlist-btn{
          background-color: green;
+         padding: 10px;
+         width: 90px;
+         height: 40px;
+         font-size: 12px;
+         margin-right: 20px;
      }
      #order-btn{
          background-color: rgb(21, 61, 240);
+         padding: 10px;
+         width: 90px;
+         height: 40px;
+         font-size: 12px;
+         margin-right: 20px;
      }
 
      /*wishlist page styling*/
@@ -655,9 +665,10 @@ tr:hover {
    .products h2{
        font-size: 5vw;
    }
- #wishlist-btn,#order-btn{
+   #wishlist-button,#order-button{
      padding: 10px;
      width: 200px;
+     height: 200px;
      font-size: 12px;
      margin-right: 20px;
  }
