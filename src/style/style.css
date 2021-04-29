@@ -672,6 +672,9 @@ tr:hover {
      font-size: 12px;
      margin-right: 20px;
  }
+ #wishlist-btn{
+     margin-bottom: 30px;
+ }
  #sub-menu .right{
      width: 80%;
      justify-content: flex-start;
