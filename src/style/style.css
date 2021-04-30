@@ -306,7 +306,7 @@
          width: 90px;
          height: 40px;
          font-size: 12px;
-         margin-right: 20px;
+         margin-right: 10px;
      }
      #order-btn{
          background-color: rgb(21, 61, 240);
@@ -589,7 +589,7 @@ tr:hover {
     display: block;
 }
 /* For responsive login form */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .log-sign-btn{
         width: 48px;
         height: 25px;
