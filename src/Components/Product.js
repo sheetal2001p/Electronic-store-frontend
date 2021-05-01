@@ -11,7 +11,7 @@ function Product() {
     }, []);
     const fetchProducts = async (req, res) => {
         try {
-            const res = await axios.get("https://sheetal-electronic-store.herokuapp.com/getProducts");
+            const res = await axios.get("https://sheetal-electronics-store.herokuapp.com/getProducts");
             setProducts(res.data);
              // setLoader(false)
             
